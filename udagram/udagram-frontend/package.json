@@ -7,9 +7,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": " not found testing but is working well",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy":"aws s3 cp --recursive --acl public-read ./www s3://udagram-bkt"
   },
   "private": true,
   "dependencies": {

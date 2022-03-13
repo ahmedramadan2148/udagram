@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install": "cd udagram-api && npm install && cd .. && cd udagram-frontend && npm install && cd .. ",
-    "test":"cd udagram-api && npm test && cd .. && cd udagram-frontend && npm test && cd ..",
+    "test":"cd udagram-api && npm run test && cd .. && cd udagram-frontend && npm run  test && cd ..",
     "build": "cd udagram-api && npm run build && cd .. && cd udagram-frontend && npm run build && cd ..",
     "deploy":"cd udagram-api && npm run deploy && cd .. && cd udagram-frontend && npm run deploy && cd .."
   },

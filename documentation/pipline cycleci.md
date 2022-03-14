@@ -10,8 +10,8 @@ The pipline circleci is connected to github  repo then fetch the changes
  > circleci/aws-elastic-beanstalk@2.0.1
 
 2- checkout the code from repositories 
-
  > checkout 
+##
 3- install backend and frontend dependency 
  > npm install 
  ##

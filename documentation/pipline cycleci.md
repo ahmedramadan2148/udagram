@@ -14,7 +14,9 @@ The pipline circleci is connected to github  repo then fetch the changes
  > checkout 
 3- install backend and frontend dependency 
  > npm install 
+ ##
 4- build the backend and frontend 
  > npm run build 
+##
 5- deploy backend and frontend 
  > npm run deploy 

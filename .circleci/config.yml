@@ -24,5 +24,16 @@ jobs:
           name: Test the backend then frontend 
           command: npm run test
       - run:
+          name: set environment for eb host 
+          command: cd udagram-api && eb use backend-api-dev && eb setenv PORT=$PORT POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_DB=$POSTGRES_DB DB_PORT=$DB_PORT POSTGRES_HOST=$POSTGRES_HOST URL=$URL JWT_SECRET=$JWT_SECRET
+      - run:
           name: deploy backend (elastic beanstalk) the deploy frontend  (s3)
           command: npm run deploy
+workflows:
+  setup: 
+    jobs:
+      - build:
+        filters:
+          branches:
+            only: 
+              - main

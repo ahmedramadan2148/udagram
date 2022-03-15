@@ -1,65 +1,38 @@
-# Udagram
+# udagram
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+The Project is clone from https://github.com/udacity/nd0067-c4-deployment-process-project-starter and use this project to deploy it in aws cloud .
+## Host 
+the project is available at :
 
-## Getting Started
+ > http://udagram-bkt.s3-website.eu-west-3.amazonaws.com/
 
-1. Clone this repo locally into the location of your choice.
-1. Move the content of the udagram folder at the root of the repository as this will become the main content of the project.
-1. Open a terminal and navigate to the root of the repo
-1. follow the instructions in the installation step
+## screenshots for deploy 
+### Frontend (S3 bucket)
+ > udagram-bkt
+ 
+![S3(udagram-bkt)](https://user-images.githubusercontent.com/95978415/158244924-244acd54-3454-4c15-92d8-d726f9e3a5b2.PNG)
 
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
+### Backend (Elastic Beanstalk)
+ > backend-api-dev
 
-### Dependencies
+![ElasticBeanstalk](https://user-images.githubusercontent.com/95978415/158245184-e15d4cd2-56c0-427d-8d97-3bee0a7b485c.PNG)
+![screencapture-console-aws-amazon-elasticbeanstalk-home-2022-03-14-21_19_56](https://user-images.githubusercontent.com/95978415/158245386-c7fb9551-82b4-409e-a985-044bae957d6f.png)
 
-```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
+### Database (RDS)
+ > postgres
+![RDS](https://user-images.githubusercontent.com/95978415/158245530-a4e784da-0d6f-4c64-bee7-8e151ba14e43.PNG)
+![RDS(postgres)](https://user-images.githubusercontent.com/95978415/158245542-b705b852-70f9-4a68-9793-649779b23142.PNG)
 
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
+### Circleci Pipline 
 
-- AWS CLI v2, v1 can work but was not tested for this project
+![screencapture-app-circleci-pipelines-github-ahmedramadan2148-2022-03-14-19_17_16](https://user-images.githubusercontent.com/95978415/158245652-17e93ee9-c00c-4e5d-8635-fe97bae86fc2.png)
+![screencapture-app-circleci-pipelines-github-ahmedramadan2148-udagram-8-workflows-67f64fda-b001-4d2f-abe0-5fd559035103-jobs-14-2022-03-14-19_16_52](https://user-images.githubusercontent.com/95978415/158245662-158e5ea5-fe5f-4124-8aaa-c8c8b3f1f240.png)
 
-- A RDS database running Postgres.
+#### secret enviroment in circleci 
+![secret](https://user-images.githubusercontent.com/95978415/158246134-ad812784-9713-4bc0-87e9-6f394f1ac8a3.PNG)
+## Architecture app 
+![arcticiture](https://user-images.githubusercontent.com/95978415/158246389-ee81664a-c622-46db-8715-3e795948a6d8.PNG)
+## circlCi digram
 
-- A S3 bucket for hosting uploaded pictures.
-
-```
-
-### Installation
-
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
-## Testing
-
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
-
-1. `cd starter/udagram-frontend`
-1. `npm run test`
-1. `npm run e2e`
-
-There are no Unit test on the back-end
-
-### Unit Tests:
-
-Unit tests are using the Jasmine Framework.
-
-### End to End Tests:
-
-The e2e tests are using Protractor and Jasmine.
-
-## Built With
-
-- [Angular](https://angular.io/) - Single Page Application Framework
-- [Node](https://nodejs.org) - Javascript Runtime
-- [Express](https://expressjs.com/) - Javascript API Framework
-
-## License
-
-[License](LICENSE.txt)
+![circlci](https://user-images.githubusercontent.com/95978415/158443682-7f6e916f-0923-48a5-bfd3-f7e7e1a0bd3d.PNG)

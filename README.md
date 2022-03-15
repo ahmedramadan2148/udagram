@@ -30,7 +30,8 @@ the project is available at :
 
 
 #### secret enviroment in circleci 
-![secret](https://user-images.githubusercontent.com/95978415/158246134-ad812784-9713-4bc0-87e9-6f394f1ac8a3.PNG)
+![finishvar](https://user-images.githubusercontent.com/95978415/158449589-7d26d08c-a87b-4511-9812-cf0290ea74f0.PNG)
+
 ## Architecture app 
 ![arcticiture](https://user-images.githubusercontent.com/95978415/158246389-ee81664a-c622-46db-8715-3e795948a6d8.PNG)
 ## circlCi digram

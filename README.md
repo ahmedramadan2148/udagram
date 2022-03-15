@@ -33,3 +33,5 @@ the project is available at :
 ![secret](https://user-images.githubusercontent.com/95978415/158246134-ad812784-9713-4bc0-87e9-6f394f1ac8a3.PNG)
 ## Architecture app 
 ![arcticiture](https://user-images.githubusercontent.com/95978415/158246389-ee81664a-c622-46db-8715-3e795948a6d8.PNG)
+## circlCi digram
+![CirclciDigram](https://user-images.githubusercontent.com/95978415/158443283-2b4fc6e9-b691-4c0e-9d07-a862b3de5623.PNG)

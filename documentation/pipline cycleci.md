@@ -20,3 +20,4 @@ The pipline circleci is connected to github  repo then fetch the changes
 ##
 5- deploy backend and frontend 
  > npm run deploy 
+![circlci](https://user-images.githubusercontent.com/95978415/158449303-1711680d-0428-4776-a52a-6b2c8660ec92.PNG)
